@@ -8,7 +8,10 @@ import { CgArrowRight } from "react-icons/cg";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20 px-16 md:px-10 lg:px-0 bg-black flex items-center justify-center flex-col gap-5">
+    <div
+      className="py-20 px-16 md:px-10 lg:px-0 bg-black flex items-center justify-center flex-col gap-5"
+      id="projects"
+    >
       <h1 className="text-3xl md:text-5xl md:px-8 lg:px-0 lg:text-6xl font-instrument font-semibold">
         Take a look at my {""}
         <span className="bg-gradient-to-l from-purple-500 to-white text-transparent bg-clip-text">
