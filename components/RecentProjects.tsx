@@ -12,12 +12,12 @@ const RecentProjects = () => {
       className="py-20 px-16 md:px-10 lg:px-0 bg-black flex items-center justify-center flex-col gap-5"
       id="projects"
     >
-      <h1 className="text-3xl md:text-5xl md:px-8 lg:px-0 lg:text-6xl font-instrument font-semibold">
+      <span className="text-3xl md:text-5xl md:px-8 lg:px-0 lg:text-6xl font-instrument font-semibold">
         Take a look at my {""}
         <span className="bg-gradient-to-l from-purple-500 to-white text-transparent bg-clip-text">
           Recent Projects
         </span>
-      </h1>
+      </span>
       <div className="flex flex-wrap md:flex-shrink-0 justify-center items-center p-4 gap-4 lg:max-h-[28rem] overflow-hidden ">
         {projects.map(({ id, title, des, img, iconLists, link, popup }) => (
           <div
@@ -26,9 +26,9 @@ const RecentProjects = () => {
           >
             <PinContainer title={popup} href={link}>
               <div className="flex basis-full flex-col gap-2 pt-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[15rem] h-[20rem]">
-                <h1 className="font-poppins font-semibold text-white text-xl">
+                <span className="font-poppins font-semibold text-white text-xl">
                   {title}
-                </h1>
+                </span>
                 <span className="font-inter text-balance">{des}</span>
                 <div className="max-h-14 w-full  flex items-center justify-start gap-2 bg-neutral-900 p-1 rounded-md hover:scale-95 duration-500">
                   {iconLists.map((icon) => (
